@@ -15,9 +15,20 @@ function adicionarAmigo() {
 
     amigos.push(nomeAmigo);
 
+
+    atualizarListaAmigos();
 }
 
+function atualizarListaAmigos() {
+    // Limpar a lista existente no HTML
+    listaAmigos.innerHTML = "";
 
+    amigos.forEach((amigo) => {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        listaAmigos.appendChild(li);
+    });
+}
 
 
 
