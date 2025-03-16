@@ -15,6 +15,8 @@ function adicionarAmigo() {
 
     amigos.push(nomeAmigo);
 
+    // Limpar o campo de input após adicionar
+    limparInput()
 
     atualizarListaAmigos();
 }
@@ -31,6 +33,21 @@ function atualizarListaAmigos() {
 }
 
 
+function sortearAmigo() {
+    // Verifica se há amigos na lista
+    if (amigos.length === 0) {
+        alert("Por favor, adicione amigos antes de sortear!");
+        return;
+    }
+
+    const indiceSorteado = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[indiceSorteado];
+
+    // Imprime o amigo sorteado na 'tela'
+    resultado.innerHTML = `<p>O amigo sorteado é: <strong>${amigoSorteado}</strong></p>`;
+}
 
 
-
+function limparInput(){
+    inputAmigo.value = "";
+}
