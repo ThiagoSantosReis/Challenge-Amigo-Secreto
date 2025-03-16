@@ -15,14 +15,14 @@ function adicionarAmigo() {
 
     amigos.push(nomeAmigo);
 
-    // Limpar o campo de input após adicionar
+    // Limpa o campo de input após adicionar
     limparInput()
 
     atualizarListaAmigos();
 }
 
 function atualizarListaAmigos() {
-    // Limpar a lista existente no HTML
+    // Limpa a lista existente no HTML
     listaAmigos.innerHTML = "";
 
     amigos.forEach((amigo) => {
