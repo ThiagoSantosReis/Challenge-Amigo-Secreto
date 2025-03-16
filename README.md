@@ -28,8 +28,6 @@ Agora você pode usar a aplicação para organizar facilmente seu jogo de "Amigo
 
 Desenvolvido por **Thiago Santos**
 
-    <h2>Conclusão</h2>
-    <p>Agora você pode usar a aplicação para organizar facilmente seu jogo de "Amigo Secreto"!</p>
 
     <div class="footer">
         <p>Desenvolvido por <strong>Thiago Santos</strong></p>
